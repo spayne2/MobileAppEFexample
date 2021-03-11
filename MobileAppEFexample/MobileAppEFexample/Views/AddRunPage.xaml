@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobileAppEFexample.AddRunPage"
+    Title="Add New Run">
+    <ContentPage.Content>
+        <TableView Intent="Form" HasUnevenRows="True">
+            <TableRoot>
+                <TableSection Title="Run Info">
+                    <EntryCell Label="DistanceInKM" Placeholder="Enter Distance In KM here" x:Name="DistanceInKMCell" Keyboard="Numeric"/>
+                    <EntryCell Label="TimeInMins" Placeholder="Enter Time In Mins here" x:Name="TimeInMinsCell" Keyboard="Numeric"/>
+                    <EntryCell Label="TimeInSeconds" Placeholder="Enter Time In Seconds here" x:Name="TimeInSecondsCell" Keyboard="Numeric"/>
+                    <EntryCell Label="Terrain" Placeholder="Enter Terrain here" x:Name="TerrainCell" Keyboard="Plain"/>
+                </TableSection>                
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked"/>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

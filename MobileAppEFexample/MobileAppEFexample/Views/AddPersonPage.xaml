@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="MobileAppEFexample.AddPersonPage"
+    Title="Add New Blog">
+    <ContentPage.Content>
+        <StackLayout>
+            <TableView Intent="Form">
+                <TableRoot>
+                    <TableSection Title="Person Info">
+                        <EntryCell Label="Name" Placeholder="Enter Name Here" x:Name="Name" Keyboard="Plain" />
+                        <EntryCell Label="Age" Placeholder="Enter Age Here" x:Name="Age" Keyboard="Numeric" />
+                        <EntryCell Label="EmailAddress" Placeholder="Enter Email Address Here" x:Name="EmailAddress" Keyboard="Email" />
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </StackLayout>
+    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save" Clicked="Save_Clicked"/>
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked"/>
+    </ContentPage.ToolbarItems>
+</ContentPage>

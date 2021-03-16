@@ -18,11 +18,23 @@
                                 <ColumnDefinition Width="*" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Label Grid.Column="0" Text="Run:"/>
-                            <Label Grid.Column="1" Text="{Binding DistanceInKM}" />
-                            <Label Grid.Column="2" Text="{Binding TimeInMins}" />
-                            <Label Grid.Column="3" Text="{Binding TimeInSeconds}" />
-                            <Label Grid.Column="4" Text="{Binding Terrain}" />
+                            <Label Grid.Column="0" Grid.Row="0" Text="Run ID" />
+                            <Label Grid.Column="0" Grid.Row="1" Text="{Binding RunID}" />
+                            
+                            <Label Grid.Column="1" Grid.Row="0" Text="Distance" />
+                            <Label Grid.Column="1" Grid.Row="1" Text="{Binding DistanceInKM}" />
+
+                            <Label Grid.Column="2" Grid.Row="0" Text="Minutes" />
+                            <Label Grid.Column="2" Grid.Row="1" Text="{Binding TimeInMins}" />
+                            
+                            <Label Grid.Column="3" Grid.Row="0" Text="Seconds" />
+                            <Label Grid.Column="3" Grid.Row="1" Text="{Binding TimeInSeconds}" />
+
+                            <Label Grid.Column="4" Grid.Row="0" Text="Terrain" />
+                            <Label Grid.Column="4" Grid.Row="1" Text="{Binding Terrain}" />
+
+                            <Label Grid.Column="5" Grid.Row="0" Text="Pace" />
+                            <Label Grid.Column="5" Grid.Row="1" Text="{Binding Pace}" />
                         </Grid>                        
                     </StackLayout>
                 </DataTemplate>

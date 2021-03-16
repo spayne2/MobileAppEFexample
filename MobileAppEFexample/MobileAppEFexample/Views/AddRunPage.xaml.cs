@@ -30,6 +30,8 @@ namespace MobileAppEFexample
                 Terrain = TerrainCell.Text,
             };
 
+            newRun.setPace();
+
             try
             {
                 using (var runningContext = new RunningContext())

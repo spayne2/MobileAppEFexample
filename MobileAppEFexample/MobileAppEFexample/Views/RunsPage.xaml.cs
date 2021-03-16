@@ -21,9 +21,10 @@ namespace MobileAppEFexample
         {
             using (var runningContext = new RunningContext())
             {
-                var runsList = runningContext.Runs
+                List<Run> runsList = runningContext.Runs
                     .Where(p => p.PersonID == PersonId)
                     .ToList();
+                runsList.Count();
 
                 runsCollection.ItemsSource = runsList;
             }

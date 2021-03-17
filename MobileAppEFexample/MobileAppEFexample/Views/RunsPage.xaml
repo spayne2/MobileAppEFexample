@@ -43,7 +43,7 @@
             <CollectionView.EmptyView>
                 <StackLayout>
                     <Label VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"
-                           Text="No posts for this blog"/>
+                           Text="No Runs for this person"/>
                 </StackLayout>
             </CollectionView.EmptyView>
 

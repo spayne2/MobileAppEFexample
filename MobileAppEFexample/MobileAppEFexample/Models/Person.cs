@@ -8,6 +8,7 @@ namespace MobileAppEFexample
         public string Name { get; set; }
         public int Age { get; set; }
         public string EmailAddress { get; set; }
+        public string Gender { get; set; }
         public List<Run> Runs { get; set; } = new List<Run>();
     }
 }

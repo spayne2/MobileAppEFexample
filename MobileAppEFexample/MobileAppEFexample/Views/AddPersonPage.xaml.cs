@@ -14,7 +14,7 @@ namespace MobileAppEFexample
 
         async void Save_Clicked(System.Object sender, System.EventArgs e)
         {
-           var person = new Person { Name = Name.Text, Age = Int32.Parse(Age.Text), EmailAddress = EmailAddress.Text};
+           var person = new Person { Name = Name.Text, Age = Int32.Parse(Age.Text), EmailAddress = EmailAddress.Text, Gender = Gender.Text};
 
             using (var runningContext = new RunningContext())
             {

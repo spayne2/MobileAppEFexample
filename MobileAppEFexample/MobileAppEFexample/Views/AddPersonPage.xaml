@@ -10,6 +10,7 @@
                 <TableRoot>
                     <TableSection Title="Person Info">
                         <EntryCell Label="Name" Placeholder="Enter Name Here" x:Name="Name" Keyboard="Plain" />
+                        <EntryCell Label="Gender" Placeholder="Enter Gender Here" x:Name="Gender" Keyboard="Plain" />
                         <EntryCell Label="Age" Placeholder="Enter Age Here" x:Name="Age" Keyboard="Numeric" />
                         <EntryCell Label="EmailAddress" Placeholder="Enter Email Address Here" x:Name="EmailAddress" Keyboard="Email" />
                     </TableSection>

@@ -33,8 +33,8 @@ namespace MobileAppEFexample
             if (!(e.CurrentSelection.FirstOrDefault() is Person person))
                 return;
 
-            var postsPage = new RunsPage(person.PersonID);
-            await Navigation.PushAsync(postsPage);
+            var runsPage = new RunsPage(person.PersonID);
+            await Navigation.PushAsync(runsPage);
         }
 
         async void ToolbarItem_Clicked(System.Object sender, System.EventArgs e)

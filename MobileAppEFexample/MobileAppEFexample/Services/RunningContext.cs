@@ -20,8 +20,7 @@ namespace MobileAppEFexample
         {
             string dbPath = Path.Combine(FileSystem.AppDataDirectory, "running.db3");
 
-            optionsBuilder
-                .UseSqlite($"Filename={dbPath}");
+            optionsBuilder.UseSqlite($"Filename={dbPath}");
         }
     }
 }
